@@ -11,6 +11,11 @@
 	right: 50px;
 	background-color: var(--white);
 }
+@media (max-width: 375px) {
+	.Menu {
+		left: 0;
+	}
+}
 .Menu ul {
 	list-style: none;
 	padding: 0;

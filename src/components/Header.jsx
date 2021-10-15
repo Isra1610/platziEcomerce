@@ -19,7 +19,7 @@ const Header = () => {
 	};
 	return (
 		<nav>
-			<img src={iconMenu} alt="menu" className="menu" />
+			<img src={iconMenu} alt="menu" className="menu" onClick={handleToggle} />
 			<div className="navbar-left">
 				<img src={logoYard} alt="logo" className="nav-logo" />
 				<ul>
