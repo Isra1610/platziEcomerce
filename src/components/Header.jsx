@@ -46,7 +46,7 @@ const Header = () => {
 			<div className="navbar-right">
 				<ul>
 					<li className="navbar-email" onClick={handleToggle}>
-						israelR@example.com
+						israelrojas@example.com
 					</li>
 					<li
 						className="navbar-shopping-cart"

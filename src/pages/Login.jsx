@@ -7,7 +7,6 @@ const Login = () => {
 	const form = useRef(null);
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
 		const formData = new FormData(form.current);
 		const data = {
 			username: formData.get("email"),
@@ -42,12 +41,15 @@ const Login = () => {
 						type="submit"
 						className="primary-button login-button"
 						onClick={handleSubmit}
+						href="/"
 					>
 						Log in
 					</button>
-					<a href="/">Forgot my password</a>
+					<a href="/password-recovery">Forgot my password</a>
 				</form>
-				<button className="secondary-button signup-button">Sign up</button>
+				<button className="secondary-button signup-button" href="/signup">
+					Sign up
+				</button>
 			</div>
 		</div>
 	);
